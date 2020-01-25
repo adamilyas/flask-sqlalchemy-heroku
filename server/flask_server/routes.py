@@ -2,6 +2,10 @@ from flask_server import app, db
 from flask_server.models import User
 from flask import jsonify, Response
 
+@app.route("/_health")
+def check_health():
+    return "normal"
+
 @app.route("/addUser/<_username>/<_email>")
 def add_user(_username, _email):
     u = User(username=_username, email=_email)
