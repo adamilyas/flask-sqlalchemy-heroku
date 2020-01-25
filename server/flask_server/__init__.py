@@ -13,4 +13,4 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'ap
 print(app.config['SQLALCHEMY_DATABASE_URI'] )
 
 if __name__ == "__main__":
-    app.run(port=4000)
+    app.run()
