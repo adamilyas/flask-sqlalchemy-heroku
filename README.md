@@ -7,7 +7,6 @@ FLASK_APP=wsgi.py
 
 ## Setting up db locally
 ```
-$ cd server
 $ flask db init
 $ flask db migrate -m "users table"
 $ flask db upgrade

@@ -1,5 +1,5 @@
-from flask_server import app, db
-from flask_server.models import User
+from application import app, db
+from application.models import User
 from flask import jsonify, Response
 
 @app.route("/_health")
